@@ -1,8 +1,8 @@
 import csv
 import json
 
-ruta_csv = ".archivos/cities.csv"
-ruta_json = ".archivos/cities.json"
+ruta_csv = "./archivos/cities.csv"
+ruta_json = "./archivos/cities.json"
 
 #Funcion para leer y obtener la data del csv
 def leer_csv(ruta):
