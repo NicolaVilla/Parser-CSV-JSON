@@ -15,3 +15,10 @@ def leer_csv(ruta):
         data = [] 
         for row in reader:
             data.append({fields[i]:row[fields[i]] for i in range(len(fields))})
+        escribir_json(data,ruta_json)
+
+def escribir_json(data,ruta):
+    with open(ruta, "w") as file:
+        json.dump(data, file, indent=4)
+
+leer_csv(ruta_csv)
